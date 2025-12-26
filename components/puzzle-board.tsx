@@ -169,7 +169,11 @@ export default function PuzzleBoard({
         style={{ gridTemplateColumns: `repeat(${gridSize}, 1fr)` }}
       >
         {Array.from({ length: gridSize * gridSize }).map((_, i) => (
-          <div key={i} className="border border-gray-700 opacity-20" />
+          <div
+            key={i}
+            className="border border-white"
+            style={{ boxSizing: "border-box" }}
+          />
         ))}
       </div>
 
